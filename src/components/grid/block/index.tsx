@@ -1,5 +1,7 @@
 import React, {FC} from 'react'
 
+import { Container } from './styles'
+
 interface IPROPS {
     colIndex: number,
     rowIndex: number
@@ -7,7 +9,7 @@ interface IPROPS {
 
 const Block: FC<IPROPS> = ({ colIndex, rowIndex}) => {
     return (
-        <div data-cy="block">|{rowIndex}{colIndex}|</div>
+        <Container data-cy={`block-${rowIndex}-${colIndex}`} />
     )
 }
 
