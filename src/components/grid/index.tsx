@@ -12,7 +12,7 @@ const Grid: FC = () => {
                    <Block colIndex={colIndex} rowIndex={rowIndex}/>
                )))}
             </Row>
-        )))}
+        )))} 
         </Container>
     )
 }
