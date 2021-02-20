@@ -26,9 +26,27 @@ function fillGrid(grid: GRID) {
         col = i % 9
 
         if (grid[row][col] === 0) {
-            //do things
+            shuffle(numbers)
             
-            //recursive things
+            for (let value of numbers) {
+                 //is it not in the grid row? 
+                 if (!grid[row].includes(value)) {
+                    //is it not in the grid column?
+                    let isNotInColumn = true
+                    for (let i = 0; i < 9; i++) {
+                        if (value === grid[i][col]) isNotInColumn = false
+                    }
+                    if (isNotInColumn) {
+                        //is it not in the grid square?
+                    }
+                 }
+                
+                //........ if all conditions listed above are true, place value in square
+                grid[row][col] = value
+                //check if grid is full, if yes, stop and return true
+                //otherwise run fillGrid(grid)
+            }
+           
             break
         }
     }
