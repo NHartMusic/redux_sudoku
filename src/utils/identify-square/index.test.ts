@@ -28,7 +28,7 @@ describe('identifySquare', () => {
             [3, 7, 6]
         ])
 
-        expect(identifySquare({ col: 5, grid, row: 5 })).toStrictEqual([
+        expect(identifySquare({ col: 8, grid, row: 8 })).toStrictEqual([
             [2, 3, 0],
             [7, 1, 4],
             [8, 5, 6]
