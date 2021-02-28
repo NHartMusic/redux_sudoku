@@ -6,9 +6,10 @@ interface IINPUT {
     value: NUMBERS
 }
 
-/* 
-    Functin that returns true if value is already used in current grid row
-*/
+/**
+ * a function that returns true if the value is already being used in the current row
+ * @param input Oject with 9x9 Sudoku grid, row index, value
+ */
 
 function isInRow({ grid, row, value}: IINPUT ): boolean {
     return grid[row].includes(value)
