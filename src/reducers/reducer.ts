@@ -1,3 +1,4 @@
+import { IReducer } from 'reducers'
 import { AnyAction } from 'redux'
 
 const initialState = {}
@@ -8,3 +9,5 @@ function reducer(state = initialState, action: AnyAction) {
             return state
     }
 }
+
+export default reducer
