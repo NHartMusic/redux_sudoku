@@ -10,7 +10,9 @@ import { GlobalStyles, theme } from 'styles'
 const store = configureStore()
 
 ReactDOM.render(
+  
   <React.StrictMode>
+    <Provider store={store}>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Content data-cy='content'>
@@ -19,8 +21,8 @@ ReactDOM.render(
         <Grid />
       </Card>
       </Content>
-      
     </ThemeProvider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 )
